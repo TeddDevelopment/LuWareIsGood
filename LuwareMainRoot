@@ -1,0 +1,12 @@
+local placeId = game.PlaceId
+
+if placeId == 6284583030 then
+    -- Player is in "Pet Simulator X"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TeddDevelopment/Luware-PSX-loadstring/main/Luware%20PSX%20loadstring", true))()
+elseif placeId == 13822889 then
+    -- Player is in "Lumber Tycoon 2"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TeddDevelopment/LuWareIsGood/main/LuWareIsGood", true))()
+else
+    -- Player is in neither game, do something else or show an error message
+    print("This script only supports 'Pet Simulator X' and 'Lumber Tycoon 2'.")
+end
